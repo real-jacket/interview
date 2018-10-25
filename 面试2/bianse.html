@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>变色</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #box {
+            display: flex;
+            width: 400px;
+            flex-wrap: wrap;
+        }
+        
+        #box div{
+            border: solid 1px red;
+        }
+        
+        #box div.enter{
+            background: red;
+        }
+
+        #box div.active{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <input  id=number type="text">
+    <button id=generate>生成盒子</button>
+    <br>
+    <div id="box"></div>
+    <script src="./bianse.js"></script>
+</body>
+
+</html>
